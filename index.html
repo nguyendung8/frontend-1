@@ -3,10 +3,343 @@
 <head>
   <meta charset="UTF-8">
   <title>Webpack Page</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <h1 id="title">Hello Webpack!</h1>
-  <p style="color: red;">chào b</p>
+  <!-- Header -->
+  <div id="header">
+    <div class="header_logo">
+      <p class="header-logo-text">
+        talent
+      </p>
+    </div>
+    <div class="header-menu">
+      <div style="font-weight: 600;" class="header-menu-item menu-active">
+        Tìm việc làm
+      </div>
+      <div class="header-menu-item">
+        Máy tính thuế
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="header-right-lang">
+        <p style="font-weight: 600;">VI</p>
+        <p style="color: #E1DCE2;">| EN</p>
+      </div>
+      <div class="header-right-account">
+        Dung
+        <i class="fa fa-chevron-down"></i>
+      </div>
+      <div class="header-right-recruite">
+        Dành cho nhà tuyển dụng
+      </div>
+    </div>
+  </div>
+
+  <!-- Jobsearch -->
+  <div id="job-search">
+    <div class="job-search-keyword">
+      <label class="input-label">Việc gì?</label>
+      <input class="input-text input-search input-keyword" placeholder="Từ khóa, công ty, kỹ năng..." tabindex="1">
+        <i class="fa fa-search search-icon" ></i>
+    </div>
+    <div class="job-search-keyword">
+      <label class="input-label">Ở đâu?</label>
+      <input class="input-text input-search input-location" placeholder="Hanoi,Hanoi" tabindex="1">
+        <i class="fa fa-map-marker search-icon" ></i>
+        <i class="fa fa-times x-icon" ></i>
+    </div>
+    <button class="find-job-button"> Tìm việc </button>
+  </div>
+
+  <!-- JobFilter -->
+  <div id="job-filter">
+    <div style="position: relative;">
+      <div style="overflow-x: auto; white-space: nowrap; position: relative;">
+        <div class="jobfilter-wrap">
+          <div class="jobfilter-wrap-item">
+            <div class="jobfilter-wrap-item-text">
+              Ngày
+              <i class="fa fa-chevron-down filter-icon" ></i>
+            </div>
+          </div>
+          <div class="jobfilter-wrap-item">
+            <div class="jobfilter-wrap-item-text">
+              Tìm kiếm trên
+              <i class="fa fa-chevron-down filter-icon" ></i>
+            </div>
+          </div>
+          <div class="jobfilter-wrap-item">
+            <div class="jobfilter-wrap-item-text">
+              Công ty
+              <i class="fa fa-chevron-down filter-icon" ></i>
+            </div>
+          </div>
+          <div class="jobfilter-wrap-item">
+            <div class="jobfilter-wrap-item-text">
+              Nguồn
+              <i class="fa fa-chevron-down filter-icon" ></i>
+            </div>
+          </div>
+          <div class="jobfilter-wrap-item">
+            <div class="jobfilter-wrap-item-text">
+              Bán kính: 15 KM
+              <i class="fa fa-chevron-down filter-icon" ></i>
+            </div>
+          </div>
+          <div class="jobfilter-wrap-item">
+            <div class="jobfilter-wrap-item-text">
+              Xóa bộ lọc
+              <i class="fa fa-times filter-icon" ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Body -->
+  <div id="container">
+    <div class="content">
+      <div class="content-title">
+        Việc làm tại Hanoi
+      </div>
+      <div class="content-jobs">
+        <!-- 1 -->
+        <div class="job-card">
+          <div class="job-card-container">
+            <img class="job-card-logo" src="./images/logo1.png" alt="Logo MB">
+            <div class="job-card-detail">
+              <div class="job-card-detail-title">
+                <div class="title-link">
+                  Chuyên viên phát triển tích hợp
+                </div>
+              </div>
+              <div class="job-card-detail-info">
+                <div class="job-address">
+                  Hà Nội, Hà Nội
+                </div>
+                <div class="company-name">
+                  Công Ty Cổ Phần Chứng Khoán MB 
+                </div>
+                <div class="job-source">
+                  Nguồn : VietnamWorks
+                </div>
+              </div>
+              <div class="job-card-detail-des">
+                <p class="job-card-detail-des-text">
+                  What We Can Offer Thu nhập hấp dẫn, cạnh tranh. Được hưởng chế độ BHXH, BHYT, BHTN, Bảo hiểm sức khỏe theo quy định của Công ty. Được tham gia các chương trình đào tạo, huấn luyện ...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="job-card">
+          <div class="job-card-container">
+            <img class="job-card-logo" src="./images/logo2.png" alt="Logo MB">
+            <div class="job-card-detail">
+              <div class="job-card-detail-title">
+                <div class="title-link">
+                  Nhân Viên Bán Hàng
+                </div>
+              </div>
+              <div class="job-card-detail-info">
+                <div class="job-address">
+                  Hà Nội, Hà Nội
+                </div>
+                <div class="company-name">
+                  Shop Qm  
+                </div>
+                <div class="job-source">
+                  Nguồn : TopCV
+                </div>
+              </div>
+              <div class="job-card-detail-des">
+                <p class="job-card-detail-des-text">
+                  What We Can Offer Thu nhập hấp dẫn theo thỏa thuận Môi trường làm việc năng động sáng tạo Chế độ khác theo quy định của công ty Job Description. Tư vấn trực tiếp hoặc gián tiếp qua...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="job-card">
+          <div class="job-card-container">
+            <img class="job-card-logo" src="./images/logo3.png" alt="Logo MB">
+            <div class="job-card-detail">
+              <div class="job-card-detail-title">
+                <div class="title-link">
+                  Nhân Viên Kinh Doanh (Thu Nhập 12-25 Triệu)
+                </div>
+              </div>
+              <div class="job-card-detail-info">
+                <div class="job-address">
+                  Hà Nội, Hà Nội
+                </div>
+                <div class="company-name">
+                  Công Ty Cổ Phần Công Nghệ Phú Thành 
+                </div>
+                <div class="job-source">
+                  Nguồn : Indeeds
+                </div>
+              </div>
+              <div class="job-card-detail-des">
+                <p class="job-card-detail-des-text">
+                  What We Can Offer Mức lương 12 25 triệu Hưởng các chế độ như ngày nghỉ, lễ tết theo luật lao động và được hưởng lương tháng 13 Làm việc trong môi trường thân thiện, năng động, chuy...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="job-card">
+          <div class="job-card-container">
+            <img class="job-card-logo" src="./images/logo4.png" alt="Logo MB">
+            <div class="job-card-detail">
+              <div class="job-card-detail-title">
+                <div class="title-link">
+                  Trưởng Phòng Hệ Thống Thông Tin Quản Trị (MIS)
+                </div>
+              </div>
+              <div class="job-card-detail-info">
+                <div class="job-address">
+                  Hà Nội, Hà Nội
+                </div>
+                <div class="company-name">
+                  Công Ty Cổ Phần Kinh Doanh F88  
+                </div>
+                <div class="job-source">
+                  Nguồn : VietnamWorks
+                </div>
+              </div>
+              <div class="job-card-detail-des">
+                <p class="job-card-detail-des-text">
+                  What We Can Offer Lương thỏa thuận hấp dẫn. lương KPIs (theo tháng) BHXH. bảo hiểm chăm sóc sức khỏe cho nhân viên (F88 Care) Thưởng cuối năm. thưởng Lễ Tết. thưởng sinh nhật. thưở...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="job-card">
+          <div class="job-card-container">
+            <img class="job-card-logo" src="./images/logo5.png" alt="Logo MB">
+            <div class="job-card-detail">
+              <div class="job-card-detail-title">
+                <div class="title-link">
+                  Kỹ Sư Công Nghệ Thông Tin
+                </div>
+              </div>
+              <div class="job-card-detail-info">
+                <div class="job-address">
+                  Hà Nội, Hà Nội
+                </div>
+                <div class="company-name">
+                  Công Ty Cổ Phần Đầu Tư Và Công Nghệ OSB  
+                </div>
+                <div class="job-source">
+                  Nguồn : VietnamWorks
+                </div>
+              </div>
+              <div class="job-card-detail-des">
+                <p class="job-card-detail-des-text">
+                  What We Can Offer Thưởng các ngày lễ, lương tháng 13, các chế độ phúc lợi khác theo quy định công ty Được tham gia các khóa đào tạo trong và ngoài công ty để nâng cao trình độ chuy...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <div class="pagination-contain">
+          <div class="pagination-previous">
+            <i class="fa fa-caret-left"></i>
+          </div>
+          <div class="pagination-body">
+            <div class="pagination-body-active">1</div>
+            <div class="pagination-body-no-active">2</div>
+          </div>
+          <div class="pagination-next">
+            <i class="fa fa-caret-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="favourite-jobs">
+        <div class="favourite-jobs-title">
+          Công việc bạn có thể thích
+        </div>
+        <div class="favourite-list-jobs">
+          <div class="favourite-list-jobs-item">
+            <div class="favourite-list-jobs-item-text">
+              <i style="margin-right: 3px;" class="fa fa-search"></i>
+              Nhan vien ke toan
+            </div>
+          </div>
+          <div class="favourite-list-jobs-item">
+            <div class="favourite-list-jobs-item-text">
+              <i style="margin-right: 3px;" class="fa fa-search"></i>
+              Nhan vien ban hang
+            </div>
+          </div>
+          <div class="favourite-list-jobs-item">
+            <div class="favourite-list-jobs-item-text">
+              <i style="margin-right: 3px;" class="fa fa-search"></i>
+              Nhan vien giao hang
+            </div>
+          </div>
+          <div class="favourite-list-jobs-item">
+            <div class="favourite-list-jobs-item-text">
+              <i style="margin-right: 3px;" class="fa fa-search"></i>
+              Nhan vien kinh doanh
+            </div>
+          </div>
+          <div class="favourite-list-jobs-item">
+            <div class="favourite-list-jobs-item-text">
+              <i style="margin-right: 3px;" class="fa fa-search"></i>
+              Fullstack Developer
+            </div>
+          </div>
+          <div class="favourite-list-jobs-item">
+            <div class="favourite-list-jobs-item-text">
+              <i style="margin-right: 3px;" class="fa fa-search"></i>
+              Backend Developer
+            </div>
+          </div>
+          <div class="favourite-list-jobs-item">
+            <div class="favourite-list-jobs-item-text">
+              <i style="margin-right: 3px;" class="fa fa-search"></i>
+              Project Manager
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+
+
+
+
+
+
+
+
+  <div id="footer"></div>
+
+
+
+
+
+
+
+
+
+
+
+
   <script src="./dist/main.js"></script>
 </body>
 </html>
